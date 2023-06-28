@@ -1,0 +1,27 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/cpp
+{
+	"name": "C/C++",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vscode-icons-team.vscode-icons",
+				"ms-vscode.cpptools-extension-pack",
+				"bierner.markdown-preview-github-styles",
+				"llvm-vs-code-extensions.vscode-clangd"
+				
+			],
+			"settings": {
+				"workbench.iconTheme": "vscode-icons",
+				"vsicons.dontShowNewVersionMessage": true,
+				"editor.bracketPairColorization.enabled": true,
+				"editor.wordWrap": "on",
+				"C_Cpp.intelliSenseEngine": "disabled",
+				"clangd.path": "clangd-12"
+			}
+		}
+	}
+}
